@@ -1,0 +1,10 @@
+<p>Text from the IFrame:</p>
+<p id="cookies"></p>
+<script src="/static/js/jquery-3.3.1.min.js"></script>
+<script src="/static/js/cookie.js"></script>
+<script>
+  $(document).ready(function() {
+    var cookies_element = document.getElementById('cookies');
+    cookies_element.innerText = listCookies();
+  });
+</script>
